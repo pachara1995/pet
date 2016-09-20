@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //t.show();
         TextView TV = (TextView) findViewById(R.id.digit_text_view);
         int id = v.getId();
-
+    int test;
 
         if(id == R.id.button_1){
             Num = Num+"1";
