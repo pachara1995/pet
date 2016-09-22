@@ -53,7 +53,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btnC = (Button) findViewById(R.id.clear_button);
         btnC.setOnClickListener(this);
     }
-    String Num = null;
+    String Num = "";
+    int t = 0 ;
     public void onClick(View v) {
         //Toast t = Toast.makeText(this."Hello", Toast.LENGTH_LONG);
         //t.show();
@@ -61,29 +62,51 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int id = v.getId();
     int test;
 
-        if(id == R.id.button_1){
+        if(id == R.id.button_1 && t<6){
+            t++;
             Num = Num+"1";
             TV.setText(Num);
-        } else  if(id == R.id.button_2){
+        } else  if(id == R.id.button_2 && t<6){
+            t++;
             Num = Num+"2";
             TV.setText(Num);
-        } else  if(id == R.id.button_3){
-            TV.setText("3");
-        } else  if(id == R.id.button_4){
-            TV.setText("4");
-        } else  if(id == R.id.button_5){
-            TV.setText("5");
-        } else  if(id == R.id.button_6){
-            TV.setText("6");
-        } else  if(id == R.id.button_7){
-            TV.setText("7");
-        } else  if(id == R.id.button_8){
-            TV.setText("8");
-        } else  if(id == R.id.button_9){
-            TV.setText("9");
-        } else  if(id == R.id.button_0){
-            TV.setText("0");
-        } else  TV.setText("");
+        } else  if(id == R.id.button_3&& t<6){
+            t++;
+            Num = Num+"3";
+            TV.setText(Num);
+        } else  if(id == R.id.button_4&& t<6){
+            t++;
+            Num = Num+"4";
+            TV.setText(Num);
+        } else  if(id == R.id.button_5&& t<6){
+            t++;
+            Num = Num+"5";
+            TV.setText(Num);
+        } else  if(id == R.id.button_6&& t<6){
+            t++;
+            Num = Num+"6";
+            TV.setText(Num);
+        } else  if(id == R.id.button_7&& t<6){
+            t++;
+            Num = Num+"7";
+            TV.setText(Num);
+        } else  if(id == R.id.button_8&& t<6){
+            t++;
+            Num = Num+"8";
+            TV.setText(Num);
+        } else  if(id == R.id.button_9&& t<6){
+            t++;
+            Num = Num+"9";
+            TV.setText(Num);
+        } else  if(id == R.id.button_0&& t<6){
+            t++;
+            Num = Num + "0";
+            TV.setText(Num);
+        } else  if(id == R.id.clear_button){
+            t = 0;
+            Num = "";
+            TV.setText("");
+        }
 
 
     }
